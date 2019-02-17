@@ -1,0 +1,259 @@
+// Extra large devices (large desktops, 1200px and up - xl)
+
+.main_container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .main_container {
+    max-width: 100%;
+  }
+}
+
+.left_col {
+  padding-right: 0;
+  padding-left: 0;
+  background-image: url("../img/left_column_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.triang_contain {
+  height: 112px;
+  width: 100%;
+  -webkit-filter: drop-shadow(0 10px 5px rgba(0,0,0,.1));
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,.1));
+}
+
+.triangle {
+  width: 100%;
+  height: 100%;
+  background: url("../img/block.png");
+  -webkit-clip-path: polygon(100% 0,0 0,50% 50%);
+  clip-path: polygon(100% 0,0 0,50% 100%);
+  background-position: left;
+}
+
+.intro {
+  background-image: url("../img/block.png");
+  display: inline-block;
+  height: 52%;
+  position: relative;
+  width: 100%;
+
+  &__title {
+    color: $basic_header;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 8%;
+  }
+
+  &__avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 2%;
+  }
+
+  &__subtitle {
+    color: $basic_header;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  &__dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    margin-bottom: 3%;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 16px;
+    padding: 2% 5%;
+  }
+
+  &__position {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.contact {
+  &__location_titile {
+    color: $basic_header;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+
+  &__location_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-bottom: 4%;
+  }
+
+  &__location_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7%;
+  }
+
+  &__phone_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-bottom: 4%;
+  }
+
+  &__phone_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7%;
+  }
+
+  &__mouse_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-bottom: 4%;
+  }
+
+  &__mouse_titile {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20%;
+  }
+}
+// Right Main area
+
+.right_col {
+  background-image: url("../img/Right_Column_bg_873.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-right: 0;
+}
+// experience Section
+
+.experience_section {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.experience {
+  display: flex;
+
+  &__briefcase_title {
+    margin-left: 2%;
+    vertical-align: middle;
+    margin-top: 1%;
+    text-transform: uppercase;
+  }
+}
+
+.company {
+  &__title {}
+
+  &__ulexp_list {
+    list-style-image: url("../img/bullet_point_small.png");
+  }
+}
+
+.experience_col_one,
+.experience_col_two {
+  &__list_item {
+    list-style-image: url("../img/bullet_point_small.png");
+    text-transform: uppercase;
+  }
+
+  &__link_exp {
+    margin-left: 10%;
+    text-transform: lowercase;
+  }
+}
+// Past Projects section
+
+.past_section {
+  width: 80%;
+  margin-left: 5%;
+}
+
+.past {
+  display: flex;
+  padding-bottom: 3%;
+
+  &__imac_title {
+    margin-left: 2%;
+    vertical-align: middle;
+    margin-top: 1%;
+    text-transform: uppercase;
+  }
+}
+
+.past_col_one,
+.past_col_two {
+  &__list_item {
+    list-style-image: url("../img/bullet_point_small.png");
+    text-transform: uppercase;
+  }
+
+  &__link_exp {
+    margin-left: 10%;
+    text-transform: lowercase;
+  }
+}
+// Skills section
+.skills_section {
+  width: 80%;
+  margin-left: 5%;
+}
+
+.skills {
+  display: flex;
+  padding-bottom: 3%;
+
+  &__skills_title {
+    margin-left: 2%;
+    vertical-align: middle;
+    margin-top: 1%;
+    text-transform: uppercase;
+  }
+}
+
+.skills_col_one,
+.skills_col_two {
+  &__list_item_dark {
+    list-style-image: url("../img/dark_bullet.png");
+    text-transform: uppercase;
+  }
+
+  &__list_item {
+    list-style:none;
+    text-transform: uppercase;
+  }
+
+  &__link_exp {
+    margin-left: 10%;
+    text-transform: lowercase;
+  }
+}

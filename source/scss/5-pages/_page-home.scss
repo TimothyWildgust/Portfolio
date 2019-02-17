@@ -1,0 +1,53 @@
+//fullwidth_header homepage
+.fullwidth_header{
+    height: 100vh;
+    background-image: url("/assets/img/slider_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  &__container{
+    height: 100vh;
+  }
+  &__title{
+    text-align: center;
+    padding-top: 50vh;
+    font-size: 60px;
+  }
+  &__subtitle{
+    text-align: center;
+    font-size: 30px;
+  }
+}
+// secondary nav under fullwidth_header homepage
+.secondary_menu{
+    height: 10vh;
+    background-color: transparent;
+    margin-top: -2%;
+
+  &__container{
+
+  }
+  &__rowone{
+    background-color: blue;
+    height: 10vh;
+    border-top-left-radius: 50px;
+
+    &__float_left{
+      float: left;
+      width: 40%;
+    }
+    &__float_right{
+      float: right;
+      width: 40%;
+    }
+  }
+  &__rowtwo{
+    background-color: white;
+    height: 20vh;
+  }
+  &__rowthree{
+    background-color: blue;
+    height: 10vh;
+    border-top-right-radius: 50px;
+  }
+}
