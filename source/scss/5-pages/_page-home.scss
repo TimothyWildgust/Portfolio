@@ -1,8 +1,29 @@
 // body
+
+.col-md-3 {
+  padding-right: 0;
+}
+
 body.expansion-alids-init {
-    z-index: -4;
+  z-index: -4;
+}
+
+.navbar-expand-md .navbar-collapse {
+  display: flex!important;
+  flex-basis: auto;
+  flex-direction: row-reverse;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  background-color: #f6eb14;
+  font-weight: 800;
+}
+
+.display_none {
+  display: none;
 }
 // container
+
 .main_container {
   width: 100%;
   padding-right: 15px;
@@ -12,6 +33,11 @@ body.expansion-alids-init {
 }
 @media (min-width: 768px) {
   .main_container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
     max-width: 100%;
   }
 }
@@ -26,7 +52,7 @@ body.expansion-alids-init {
   background-position: center;
   height: 100%;
 }
-// Left intro section
+// Left intro ion
 
 .intro {
   background-image: url("../img/block.png");
@@ -77,7 +103,7 @@ body.expansion-alids-init {
     font-weight: 600;
   }
 }
-// Triangle polygon section
+// Triangle polygon ion
 
 .triangle {
   &__contain {
@@ -96,7 +122,7 @@ body.expansion-alids-init {
     background-position: left;
   }
 }
-// Conatct Section
+// Conatct ion
 
 .contact {
   &__titile {
@@ -132,7 +158,7 @@ body.expansion-alids-init {
   background-repeat: no-repeat;
   padding-right: 0;
   padding-left: 0;
-      z-index: -3;
+  // z-index: -3;
 }
 
 .content::before {
@@ -145,8 +171,8 @@ body.expansion-alids-init {
   top: 0;
   right: 0;
   content: "";
-  z-index: -1;
-overflow: hidden;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .content::after {
@@ -159,13 +185,14 @@ overflow: hidden;
   bottom: 0;
   right: 0;
   content: "";
-      z-index: -1;
+  z-index: 0;
 }
 
 .sect:nth-child(1) {
   margin-top: 5%;
 }
-.sect:nth-child(n+2){
+
+.sect:nth-child(n+2) {
   margin-top: 2%;
 }
 
@@ -211,10 +238,11 @@ overflow: hidden;
     list-style-image: url("../img/bullet_point_small.png");
     text-transform: uppercase;
   }
+
   &__liexp_list_dark {
     list-style-image: url("../img/dark_bullet.png");
     text-transform: uppercase;
-        font-size: 15px;
+    font-size: 15px;
   }
 
   &__link_exp {
@@ -349,8 +377,9 @@ overflow: hidden;
   &__four_four {
     padding: 0;
   }
-  &__description{
-        margin-left: 3%;
+
+  &__description {
+    margin-left: 3%;
   }
 }
 @keyframes fadein {
@@ -400,5 +429,46 @@ overflow: hidden;
 
   to {
     opacity: 1;
+  }
+}
+// Portfolio page
+
+.cert:nth-child(1) {
+  margin-top: 3%;
+}
+
+.cert:nth-child(n+2) {
+  margin-top: 2%;
+}
+
+.cert {
+  width: 100%;
+  padding: 2%;
+
+  &__cont {
+    padding: 15px;
+    margin-bottom: 3%;
+  }
+
+  &__desc {
+    padding: 4%;
+  }
+
+  &__port {
+    background-image: url("../img/block.png");
+    margin-bottom: -0.7%;
+    height: 78%;
+    padding-top: 3%;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__inner {
+    margin: 0 10px 10px;
+    background-color: white;
+    height: 95%;
+    max-height: 95%;
   }
 }
