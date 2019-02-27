@@ -1,4 +1,3 @@
-// body
 
 .col-md-3 {
   padding-right: 0;
@@ -429,46 +428,5 @@ body.expansion-alids-init {
 
   to {
     opacity: 1;
-  }
-}
-// Portfolio page
-
-.cert:nth-child(1) {
-  margin-top: 3%;
-}
-
-.cert:nth-child(n+2) {
-  margin-top: 2%;
-}
-
-.cert {
-  width: 100%;
-  padding: 2%;
-
-  &__cont {
-    padding: 15px;
-    margin-bottom: 3%;
-  }
-
-  &__desc {
-    padding: 0% 4% 4% 4%;
-  }
-
-  &__port {
-    background-image: url("../img/block.png");
-    margin-bottom: -0.7%;
-    height: 78%;
-    padding-top: 3%;
-  }
-
-  &__title {
-    text-align: left;
-  }
-
-  &__inner {
-    margin: 0 10px 10px;
-    background-color: white;
-    height: 95%;
-    max-height: 95%;
   }
 }
